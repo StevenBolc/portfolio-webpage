@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+    flex-direction:row;
+}
+
 :root {
-    --font-1: sans-serif;
-    --font-2: sans-serif;
+    --font-1: sans-serif ;
     --background-color: white;
     --font-color-1: black;
     --font-color-2: darkgrey;
@@ -8,20 +12,32 @@
     --btn-color: lightblue;
   }
   
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  .header {
+    background-color: var(--secondary-color) ;
+    height:70%;  
+    width: 100%;
+    padding: 41px;
+    float: right;
+    max-width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
   }
-  
+
   body {
-    background-color: var(--background-color);
-    color: var(--font-color-1);
     font-size: 14px;
     font-family: var(--font-1);
   }
   
+  
+  .header .logo {
+    background-color: lightblue; 
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    padding: 20px 20px;
+    font-size: 50px;
+  }
+
   .container {
     width: 80vw;
     border: #2f2f37;
@@ -30,53 +46,47 @@
     padding: 2rem;
     float: left;
   }
-  
-  
-  .font-1 {
-    color: var(--font-color-1);
-    font-family: var(--font-1);
-  }
-  .font-2 {
-    color: var(--font-color-2);
-    font-family: var(--font-2);
-    font-size: 20px;
-  }
+
+  .background {
+    width: 100%;
+    display: block;
+    max-height: 300px;
+    
+   }
+   
+    .background-text {
+       position:absolute;
+       bottom: 720px;
+       right: 100px;
+       background-color: lightblue;
+       color: var(--secondary-color);
+       padding-left: 20px;
+       padding-right: 20px;
+       font-family: var(--font-1);
+      
+     }
   
 .border {
-    padding: 100px;
+    padding: 0px;
 }
-.border-picture img {
-    object-fit: contain;
-max-height: 600px;
-} 
-  
+
+
   h1 {
     font-size: 50px;
   }
   
+  
 
   
-  /* ============== HEADER ============== */
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    border: var(--btn-color);
-    text-decoration: none;
-    color: var(--font-color-1);
-  }
-  
-  .nav-list {
+
+.nav-list {
     text-decoration: underline;
     text-decoration-color: var(--btn-color);
     display: flex;
     align-items: right;
   }
-  
+
+
   .nav-items {
     list-style: none;
     
@@ -96,87 +106,139 @@ max-height: 600px;
   }
   
   /* ============== MAIN ============== */
-  .section-one {
-    display: flex;
-    max-width: 600px;
-    width: 100%;
-    color: darkblue;
 
-  }
-  .section-one h1 {
-    display: inline-block;
-    border-right: 5px solid darkblue;
-    padding-right: 10px;
+.about-me {
+    display: flex;
+    color: rgb(71, 71, 114);
+    justify-self:right;
+    padding: 4%;
+    position: relative;
+    width: 100%;
+    left: 40px;
+}
+
+
+  .about-me h1 {
+    border-right: 5px solid rgb(71, 71, 114);
+    padding-right: 20px;
     margin: 0 10px;
     height: 125px;
+    text-align: right;
 
   }
+  .about-me > p {
+    font-size: 25px;
+    padding-left: 30px;
+    color:rgb(71, 71, 114);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 
-  .section-one img {
+  }
+  .brands {
     display: flex;
-    flex-wrap: wrap;
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
+    color: rgb(71, 71, 114);
+    justify-self: right;
+    padding: 4%;
+    position: relative;
+    width: 100%; 
+    left: 40px;
+  }
+
+  .brands h1 {
+    border-right: 5px solid rgb(71, 71, 114);
+    padding-right: 20px;
+    font-size: 55px;
+    margin: 0 10px;
+    height: 125px;
+    text-align: right;
+  }
+
+  .brands img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
   }
   
-  .section-one > p {
+  .brands > p {
     text-align: justify;
   }
   
+  .image-detail:hover {
+    opacity: 0.3;
+    }
+    .image-detail {
+      
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border: 5px solid lightblue;
+        
+      }
+      .image-detail header {
+        background-color: lightblue; 
+        font-family: var(--font-1);
+        color: var(--secondary-color);
+        padding: 20px 20px;
+        font-size: 30px
+      }
+      
+      
+
+      .contact {
+        display: flex;
+        color: rgb(71, 71, 114);
+        justify-self:right;
+        position: relative;
+      }
+
+      .contact h1 {
+        border-right: 5px solid rgb(71, 71, 114);
+        padding-right: 20px;
+        font-size: 55px;
+        margin: 0 10px;
+        height: 125px;
+        text-align: right;
+      }
+
+        .link-items {
+       list-style: none;
+    
+   
+      }
   
+      .link-items > a {
+        color: black;
+       display: flex;
+       padding: 0 1rem;
+       font-size: 25px;
+       
+     }
+  
+     .link-items > a:hover {
+    color: cyan;
+     }
  
-  /* =============== FOOTER ================ */
-  footer {
+     /* =============== FOOTER ================ */
+     footer {
     background-color: var(--secondary-color);
-  }
-  footer > section {
+    }
+     footer > section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+     }
   .footer-logos > img {
     margin: 0 0.5rem;
   }
   
-  /* =============== RESPONSIVE ================ */
-  @media screen and (max-width: 1100px) {
-    .brands {
-      justify-content: center;
-    }
-  }
-  
-  @media screen and (max-width: 800px) {
-    .container {
-      width: 90vw;
-    }
-    .works {
-      grid-template-columns: 1fr;
-    }
-    .nav-toggler {
-      display: block;
-      cursor: pointer;
-    }
-    nav,
-    header > .btn {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    body {
-      font-size: 10px;
-    }
-    .works {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-    h1 {
-      font-size: 1.5rem;
-    }
-    h2 {
-      font-size: 1.2rem;
-    }
-  }
+
  
   
