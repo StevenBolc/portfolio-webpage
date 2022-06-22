@@ -4,16 +4,12 @@
 }
 
 :root {
-    --font-1: sans-serif ;
-    --background-color: white;
-    --font-color-1: black;
-    --font-color-2: darkgrey;
-    --secondary-color: #2f2f37;
-    --btn-color: lightblue;
+    background-color: rgb(210, 219, 245);
+    --btn-color: ;
   }
   
   .header {
-    background-color: var(--secondary-color) ;
+    background-color:#2f2f37 ;
     height:70%;  
     width: 100%;
     padding: 41px;
@@ -26,17 +22,18 @@
 
   body {
     font-size: 14px;
-    font-family: var(--font-1);
+    font-family: sans-serif;
   }
   
   
   .header .logo {
-    background-color: lightblue; 
-    font-family: var(--font-1);
-    color: var(--secondary-color);
+    background-color: rgb(221, 155, 166); 
+    font-family: sans-serif;
+    color: #2f2f37;
     padding: 20px 20px;
     font-size: 50px;
   }
+
 
   .container {
     width: 80vw;
@@ -58,11 +55,11 @@
        position:absolute;
        bottom: 720px;
        right: 100px;
-       background-color: lightblue;
-       color: var(--secondary-color);
+       background-color:  rgb(221, 155, 166);;
+       color: #2f2f37;
        padding-left: 20px;
        padding-right: 20px;
-       font-family: var(--font-1);
+       font-family: sans-serif;
       
      }
   
@@ -80,8 +77,9 @@
   
 
 .nav-list {
-    text-decoration: underline;
-    text-decoration-color: var(--btn-color);
+    text-decoration: underline 3px;
+    color: rgb(174, 173, 230);
+    text-decoration-color: rgb(174, 173, 230);
     display: flex;
     align-items: right;
   }
@@ -102,7 +100,7 @@
   }
   
   .nav-items > a:hover {
-    color: cyan;
+    color:  rgb(117, 115, 238);
   }
   
   /* ============== MAIN ============== */
@@ -122,7 +120,6 @@
     border-right: 5px solid rgb(71, 71, 114);
     padding-right: 20px;
     margin: 0 10px;
-    height: 125px;
     text-align: right;
 
   }
@@ -133,14 +130,19 @@
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 
   }
+
+
+
+
   .brands {
     display: flex;
+    flex-wrap: wrap;
     color: rgb(71, 71, 114);
     justify-self: right;
     padding: 4%;
     position: relative;
-    width: 100%; 
-    left: 40px;
+    width: 100%;
+    left: 100px;
   }
 
   .brands h1 {
@@ -148,49 +150,45 @@
     padding-right: 20px;
     font-size: 55px;
     margin: 0 10px;
-    height: 125px;
     text-align: right;
   }
 
   .brands img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 100vh;
-    margin: 0 auto;
+    display: block;
+    width: 500px;
+    height: 180px;
+    margin: auto auto;
     border-style: solid;
-    border-width: 2px;
+    border-width: 10px;
+    color: rgb(157, 156, 228);
   }
   
   .brands > p {
     text-align: justify;
   }
   
-  .image-detail:hover {
-    opacity: 0.3;
-    }
-    .image-detail {
-      
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-        border: 5px solid lightblue;
-        
+    .image-detail {    
+        display: flex;
+        align-items: flex-end;
+        padding-left:200px;
+        padding-bottom: 15px;
+        text-align: left;
+         
       }
+      
       .image-detail header {
-        background-color: lightblue; 
-        font-family: var(--font-1);
-        color: var(--secondary-color);
+        position: absolute;
+        background-color: rgb(157, 156, 233); 
+        font-family: sans-serif;
+        color:#2f2f37;
         padding: 20px 20px;
         font-size: 30px
       }
       
-      
+      .image-detail:hover {
+        opacity: .3;
+        
+        } 
 
       .contact {
         display: flex;
@@ -200,16 +198,20 @@
       }
 
       .contact h1 {
+        text-align: left;
         border-right: 5px solid rgb(71, 71, 114);
         padding-right: 20px;
         font-size: 55px;
         margin: 0 10px;
-        height: 125px;
-        text-align: right;
+        
+        
       }
 
         .link-items {
        list-style: none;
+       display:inline-flex
+       
+       
     
    
       }
@@ -228,7 +230,7 @@
  
      /* =============== FOOTER ================ */
      footer {
-    background-color: var(--secondary-color);
+    background-color: #2f2f37;
     }
      footer > section {
     display: flex;
