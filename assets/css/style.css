@@ -5,7 +5,7 @@
 
 :root {
     background-color: rgb(210, 219, 245);
-    --btn-color: ;
+    
 }
 
 .header {
@@ -21,15 +21,20 @@
 }
 
 body {
+    background-color: #b0b0cf;
     font-size: 14px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
 
 
+section .contact {
+    background-color: #2f2f37;
+}
+
 .header .logo {
     background-color: rgb(221, 155, 166);
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: #2f2f37;
+    color: #595999;
     padding: 20px 20px;
     font-size: 50px;
     border-radius: 3px;
@@ -38,7 +43,7 @@ body {
 
 .container {
     width: 80vw;
-    border: #2f2f37;
+    border: #8888c0;
     max-width: 1500px;
     margin: 0 auto;
     padding: 2rem;
@@ -59,7 +64,7 @@ body {
     top: 33%;
     background-color: rgb(221, 155, 166);
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: #2f2f37;
+    color: #595999;
     padding: 1px 30px;
     font-size: 50px;
     border-radius: 3px;
@@ -94,7 +99,7 @@ h1 {
 }
 
 .nav-items>a {
-    color: var(--btn-color);
+    color: rgb(174, 173, 230);
     display: flex;
     padding: 0 1rem;
     font-size: 25px;
@@ -114,7 +119,7 @@ h1 {
     padding: 4%;
     position: relative;
     width: 100%;
-    left: 40px;
+    left: 11px;
 
 }
 
@@ -129,6 +134,9 @@ h1 {
 }
 
 .about-me>p {
+    background-color: #c8c8ec;
+    padding: 50px 30px;
+    border-radius: 3px;
     font-size: 25px;
     padding-left: 30px;
     color: rgb(71, 71, 114);
@@ -138,6 +146,7 @@ h1 {
 
 
 .brands {
+    
     display: flex;
     flex-wrap: wrap;
     color: rgb(71, 71, 114);
@@ -160,6 +169,7 @@ h1 {
 
 
 .brands img {
+    
     display: flex;
     width: 500px;
     height: 180px;
@@ -170,21 +180,29 @@ h1 {
 }
 
 .project {
+    
     display: flex;
     flex-wrap: wrap;
     flex: 2 1 600px;
     color: rgb(71, 71, 114);
-    padding: 4%;
+    padding: 50px 60px 10px;
 
 }
 
 .primary-image {
     display: flex;
     align-items: flex-end;
-    padding-left: 550px;
-    padding-bottom: 15px;
-    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    
 
+}
+
+.primary-image img { 
+    display: flex;
+    justify-content: center;
+    width: 1030px;
+    height: 600px;
 }
 
 .primary-image h2 {
@@ -205,8 +223,8 @@ h1 {
 .image-detail {
     display: flex;
     align-items: flex-end;
-    padding-left: 400px;
-    padding-bottom: 15px;
+    padding-inline: 15px;
+    padding-bottom: 30px;
 
 
 }
@@ -230,37 +248,55 @@ h1 {
 }
 
 .contact {
+    background-color: rgb(124, 124, 172);
+    display: flex;
+    color: rgb(71, 71, 114);
+    
+}
+
+.contact-links {
     display: flex;
     color: rgb(71, 71, 114);
     justify-self: right;
+    padding: 4%;
     position: relative;
-
-
+    width: 100%;
+    left: 11px;
 
 }
 
-.contact h1 {
-    text-align: left;
+.contact-links h1 {
     border-right: 5px solid rgb(71, 71, 114);
-    padding-right: 20px;
-    font-size: 55px;
-    margin: 0 10px;
+    padding-right: 10px;
+    margin: 30px 0px;
+    text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-
-
 }
+
+
+
+
+.link-list {
+    text-decoration: underline 3px;
+    color: rgb(174, 173, 230);
+    display: flex;
+    
+}
+
 
 .link-items {
     list-style: none;
-    display: inline-flex
+    
+
 }
 
 .link-items>a {
     color: rgb(174, 173, 230);
     display: flex;
-    padding: 0 1rem;
+    padding-right: 20vh;
+    padding-top: 7vh;
     font-size: 25px;
-
+   
 }
 
 .link-items>a:hover {
