@@ -1,6 +1,6 @@
 Designing a portfolio webpage
 
-<img src="assets/images/portfolio-webpage.PNG">
+<img src="assets/pictures/portfolio-webpage.PNG">
 
 started initial webpage design, modeling it after the example given.
 Granted, it was unnecessary to attempt, and gave me a lot of challenge.
